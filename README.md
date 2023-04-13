@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Tor Odin Ekle, an Economist working in tech who until now has used R.
 - 💡 I’m interested in how to get insights from data, especially weak for econometrics.
-- 🌱 I’m currently learning Python, SQL and Azure.
+- 🌱 I’m currently learning Python, SQL and NEO4J.
 - 🔩 This account will be used to post different projects I make to learn programming better. 
 - 📫 How to reach me: torodinekle@gmail.com, tor-odin.ekle@capgemini.com
 
