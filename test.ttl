@@ -1,0 +1,155 @@
+@prefix : <http://example.org/ontology#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://example.org/organisationslista> a :Organisationslista ;
+    :hasOrganisation [
+        a :Organisation ;
+        :hasIdentitetsbeteckning [
+            :organisationsnummer "string" ;
+            :personnummer "string" ;
+            :samordningsnummer "string" ;
+            :gdNummer "string" ;
+            :utlandskIdentitetsbeteckning "string" ;
+            :fodelsedatum "string" ;
+        ] ;
+        :namnskyddslopnummer 2 ;
+        :hasOrganisationsnamn [
+            :typ "string" ;
+            :namn "string" ;
+        ] ;
+        :hasOrganisationsform [
+            :kod "string" ;
+            :klartext "string" ;
+        ] ;
+        :hasOrganisationsstatus [
+            :kod "string" ;
+            :klartext "string" ;
+            :datum "2023-08-28"^^xsd:date ;
+        ] ;
+        :hasOrganisationsdatum [
+            :registreringsdatum "2023-08-28"^^xsd:date ;
+            :bildatDatum "2023-08-28"^^xsd:date ;
+        ] ;
+        :hasHemvistkommun [
+            :typ "string" ;
+            :lanForHemvistkommun [
+                :kod "string" ;
+                :klartext "string" ;
+            ] ;
+            :kommun [
+                :kod "string" ;
+                :klartext "string" ;
+            ] ;
+        ] ;
+        :hasRakenskapsar [
+            :rakenskapsarInleds "string" ;
+            :rakenskapsarAvslutas "string" ;
+        ] ;
+        :verksamhetsbeskrivning "string" ;
+        :hasOrganisationsadresser [
+            :hasPostadress [
+                :coAdress "string" ;
+                :adress "string" ;
+                :postnummer "string" ;
+                :postort "string" ;
+                :land [
+                    :kod "string" ;
+                    :klartext "string" ;
+                ] ;
+            ] ;
+            :epostadress "string" ;
+        ] ;
+        :hasFirmateckning [
+            :klartext "string" ;
+        ] ;
+        :hasSarskildaForetagsnamn [
+            [
+                :hasOrganisationsnamn [
+                    :typ "string" ;
+                    :namn "string" ;
+                ] ;
+                :registreringsdatum "2023-08-28"^^xsd:date ;
+                :verksamhetsbeskrivning "string" ;
+                :beslutAvStamma "string" ;
+                :beslutstyp "string" ;
+            ] ;
+        ] ;
+        :hasForetagsnamnPaFrammandeSprak [
+            [
+                :hasOrganisationsnamn [
+                    :typ "string" ;
+                    :namn "string" ;
+                ] ;
+                :registreringsdatum "2023-08-28"^^xsd:date ;
+                :verksamhetsbeskrivning "string" ;
+                :beslutAvStamma "string" ;
+                :beslutstyp "string" ;
+            ] ;
+        ] ;
+        :hasFunktionarer [
+            [
+                :hasFunktionarsroller [
+                    [
+                        :kod "string" ;
+                        :klartext "string" ;
+                    ]
+                ] ;
+                :hasPersonnamn [
+                    :fornamn "string" ;
+                    :efternamn "string" ;
+                ] ;
+                :hasOrganisationsnamn [
+                    :typ "string" ;
+                    :namn "string" ;
+                ] ;
+                :hasIdentitetsbeteckning [
+                    :organisationsnummer "string" ;
+                    :personnummer "string" ;
+                    :samordningsnummer "string" ;
+                    :gdNummer "string" ;
+                    :utlandskIdentitetsbeteckning "string" ;
+                    :fodelsedatum "string" ;
+                ] ;
+                :hasPostadress [
+                    :coAdress "string" ;
+                    :adress "string" ;
+                    :postnummer "string" ;
+                    :postort "string" ;
+                    :land [
+                        :kod "string" ;
+                        :klartext "string" ;
+                    ] ;
+                ] ;
+            ] ;
+        ] ;
+        :hasAktieinformation [
+            :hasAktiekapital [
+                :belopp 12000 ;
+                :valuta "SEK" ;
+            ] ;
+            :antalAktier 1200 ;
+            :hasAktiegranser [
+                :hasAktiekapitalGranser [
+                    :lagst 25000 ;
+                    :hogst 100000 ;
+                ] ;
+                :hasAntalAktierGranser [
+                    :lagst 1000 ;
+                    :hogst 10000 ;
+                ] ;
+                :valuta "SEK" ;
+            ] ;
+            :hasAktieslag [
+                [
+                    :namn "A" ;
+                    :antal 1000 ;
+                    :hasAktieslagGranser [
+                        :lagst 1000 ;
+                        :hogst 10000 ;
+                    ] ;
+                    :rostvarde "1" ;
+                ] ;
+            ] ;
+            :fritext "Antalet aktier av respektive slag får motsvara högst hela antalet aktier i bolaget." ;
+        ] ;
+    ] .
