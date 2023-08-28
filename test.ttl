@@ -157,3 +157,27 @@
 
 :aktiegranser1 a :Aktiegranser ;
     :hasAktiekapitalGrans
+    :hasAktiekapitalGranser :aktiekapitalGranser1 ;
+    :hasAntalAktierGranser :antalAktierGranser1 ;
+    :valuta "SEK" .
+
+:aktiekapitalGranser1 a :AktiekapitalGranser ;
+    :lagst 25000 ;
+    :hogst 100000 .
+
+:antalAktierGranser1 a :AntalAktierGranser ;
+    :lagst 1000 ;
+    :hogst 10000 .
+
+:aktieslag1 a :Aktieslag ;
+    :hasAktieslagEntry :aktieslagEntry1 .
+
+:aktieslagEntry1 a :AktieslagEntry ;
+    :namn "A" ;
+    :antal 1000 ;
+    :hasAktieslagGranser :aktieslagGranser1 ;
+    :rostvarde "1" .
+
+:aktieslagGranser1 a :AktieslagGranser ;
+    :lagst 1000 ;
+    :hogst 10000 .
