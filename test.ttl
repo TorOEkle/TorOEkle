@@ -14,7 +14,7 @@
     :hasHemvistkommun :hemvist1 ;
     :hasRakenskapsar :rakenskapsar1 ;
     :verksamhetsbeskrivning "string" ;
-    :hasOrganisationsadresser :orgadress1 ;
+    :hasOrganisationsadresser :orgadress1 ;ff
     :hasFirmateckning :firmateckning1 ;
     :hasSarskildaForetagsnamn :sarskildaNamn1 ;
     :hasForetagsnamnPaFrammandeSprak :foretagsnamnSprak1 ;
@@ -156,7 +156,6 @@
     :valuta "SEK" .
 
 :aktiegranser1 a :Aktiegranser ;
-    :hasAktiekapitalGrans
     :hasAktiekapitalGranser :aktiekapitalGranser1 ;
     :hasAntalAktierGranser :antalAktierGranser1 ;
     :valuta "SEK" .
